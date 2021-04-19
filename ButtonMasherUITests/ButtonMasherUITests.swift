@@ -23,7 +23,7 @@ class ButtonMasherUITests: XCTestCase {
     
     func testChangeColorButton_WhenTapped_ShouldShowLabel() {
         app.buttons["Change Color"].tap()
-        XCTAssertTrue(app.staticTexts["Now THAT's colorful!"].exists)
+        XCTAssertTrue(app.staticTexts["Now THAT's colorful!"].exists, "Label should show on screen.")
     }
 
 }
