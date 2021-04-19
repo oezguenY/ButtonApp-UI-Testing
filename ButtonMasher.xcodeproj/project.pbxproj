@@ -12,7 +12,18 @@
 		71296A9E200D45A500F8C087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71296A9C200D45A500F8C087 /* Main.storyboard */; };
 		71296AA0200D45A500F8C087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71296A9F200D45A500F8C087 /* Assets.xcassets */; };
 		71296AA3200D45A500F8C087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71296AA1200D45A500F8C087 /* LaunchScreen.storyboard */; };
+		E34B4B07262DD66F006CB0FF /* ButtonMasherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B4B06262DD66F006CB0FF /* ButtonMasherUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E34B4B09262DD66F006CB0FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71296A8D200D45A500F8C087 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71296A94200D45A500F8C087;
+			remoteInfo = ButtonMasher;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		71296A95200D45A500F8C087 /* ButtonMasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonMasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		71296A9F200D45A500F8C087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71296AA2200D45A500F8C087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71296AA4200D45A500F8C087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34B4B04262DD66F006CB0FF /* ButtonMasherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonMasherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34B4B06262DD66F006CB0FF /* ButtonMasherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMasherUITests.swift; sourceTree = "<group>"; };
+		E34B4B08262DD66F006CB0FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		71296A92200D45A500F8C087 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B4B01262DD66F006CB0FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				71296A97200D45A500F8C087 /* ButtonMasher */,
+				E34B4B05262DD66F006CB0FF /* ButtonMasherUITests */,
 				71296A96200D45A500F8C087 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				71296A95200D45A500F8C087 /* ButtonMasher.app */,
+				E34B4B04262DD66F006CB0FF /* ButtonMasherUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				71296AA4200D45A500F8C087 /* Info.plist */,
 			);
 			path = ButtonMasher;
+			sourceTree = "<group>";
+		};
+		E34B4B05262DD66F006CB0FF /* ButtonMasherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E34B4B06262DD66F006CB0FF /* ButtonMasherUITests.swift */,
+				E34B4B08262DD66F006CB0FF /* Info.plist */,
+			);
+			path = ButtonMasherUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,19 +116,42 @@
 			productReference = 71296A95200D45A500F8C087 /* ButtonMasher.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E34B4B03262DD66F006CB0FF /* ButtonMasherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34B4B0D262DD66F006CB0FF /* Build configuration list for PBXNativeTarget "ButtonMasherUITests" */;
+			buildPhases = (
+				E34B4B00262DD66F006CB0FF /* Sources */,
+				E34B4B01262DD66F006CB0FF /* Frameworks */,
+				E34B4B02262DD66F006CB0FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34B4B0A262DD66F006CB0FF /* PBXTargetDependency */,
+			);
+			name = ButtonMasherUITests;
+			productName = ButtonMasherUITests;
+			productReference = E34B4B04262DD66F006CB0FF /* ButtonMasherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		71296A8D200D45A500F8C087 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Caleb Stultz";
 				TargetAttributes = {
 					71296A94200D45A500F8C087 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					E34B4B03262DD66F006CB0FF = {
+						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 71296A94200D45A500F8C087;
 					};
 				};
 			};
@@ -114,6 +169,7 @@
 			projectRoot = "";
 			targets = (
 				71296A94200D45A500F8C087 /* ButtonMasher */,
+				E34B4B03262DD66F006CB0FF /* ButtonMasherUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +185,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E34B4B02262DD66F006CB0FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +204,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E34B4B00262DD66F006CB0FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B4B07262DD66F006CB0FF /* ButtonMasherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E34B4B0A262DD66F006CB0FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71296A94200D45A500F8C087 /* ButtonMasher */;
+			targetProxy = E34B4B09262DD66F006CB0FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		71296A9C200D45A500F8C087 /* Main.storyboard */ = {
@@ -300,6 +379,49 @@
 			};
 			name = Release;
 		};
+		E34B4B0B262DD66F006CB0FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCP72WGYNQ;
+				INFOPLIST_FILE = ButtonMasherUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ozgun1.ButtonMasherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ButtonMasher;
+			};
+			name = Debug;
+		};
+		E34B4B0C262DD66F006CB0FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MCP72WGYNQ;
+				INFOPLIST_FILE = ButtonMasherUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ozgun1.ButtonMasherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ButtonMasher;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +439,15 @@
 			buildConfigurations = (
 				71296AB3200D45A500F8C087 /* Debug */,
 				71296AB4200D45A500F8C087 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E34B4B0D262DD66F006CB0FF /* Build configuration list for PBXNativeTarget "ButtonMasherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34B4B0B262DD66F006CB0FF /* Debug */,
+				E34B4B0C262DD66F006CB0FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
